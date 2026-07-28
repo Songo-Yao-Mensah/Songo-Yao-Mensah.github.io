@@ -1,5 +1,0 @@
-Dossier prêt pour plus tard : si tu obtiens des certifications avec un
-badge/certificat visuel (Coursera, TIA Portal, etc.), dépose l'image ici
-et ajoute une entrée dans le tableau "distinctions" de js/data.js
-(un champ "image" existe déjà dans la structure des projets — tu peux
-répliquer le même principe si tu veux l'ajouter aux distinctions).

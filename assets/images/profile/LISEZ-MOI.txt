@@ -1,6 +1,0 @@
-Le design actuel du Hero utilise un schéma technique animé (SVG) plutôt
-qu'une photo, pour un rendu "blueprint" cohérent avec le thème ingénieur.
-
-Si tu préfères quand même remplacer ce schéma par une photo pro plus tard,
-dépose-la ici (ex: portrait.jpg) et dis-le à Claude — l'échange du visuel
-hero est une modification simple et ciblée du code.
