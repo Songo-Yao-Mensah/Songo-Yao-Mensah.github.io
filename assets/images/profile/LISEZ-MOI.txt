@@ -1,0 +1,3 @@
+Le design actuel du Hero utilise un schema technique anime (SVG) plutot
+qu'une photo. Si tu veux remplacer ce schema par une photo pro plus tard,
+depose-la ici et dis-le a Claude.
