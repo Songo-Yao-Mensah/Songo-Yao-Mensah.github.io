@@ -1,0 +1,6 @@
+Dépose ici ton CV en PDF avec exactement ce nom de fichier :
+
+  CV_Songo_Yao_Mensah.pdf
+
+Le bouton "Télécharger CV" du site pointe déjà vers ce fichier
+(voir identity.cvFile dans js/data.js si tu veux changer le nom).
