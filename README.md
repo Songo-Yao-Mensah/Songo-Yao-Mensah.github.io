@@ -77,3 +77,9 @@ HTML5, CSS3 (variables, Grid, animations), JavaScript sans dépendance.
 Polices Google Fonts : Space Grotesk (titres), DM Sans (texte). Grain léger généré en SVG (aucune image lourde).
 Accessibilité : navigation clavier, lien d'évitement, contrastes, respect du réglage
 « réduire les animations ». Version imprimable propre (Ctrl + P).
+
+## Cache des navigateurs
+
+Dans `index.html`, les fichiers CSS et JS sont appelés avec `?v=4`.
+Après une grosse modification de `css/style.css`, `js/data.js` ou `js/main.js`,
+augmente ce numéro (`?v=5`, etc.) pour que les visiteurs chargent bien la nouvelle version.
