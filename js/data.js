@@ -5,7 +5,7 @@
  * Modifie uniquement ce fichier pour mettre le site à jour.
  *
  * - projects : l'ordre de la liste = l'ordre d'affichage.
- *   Les ${featured} premiers s'affichent en grandes cartes, les suivants
+ *   Les 6 premiers (valeur « featured ») s'affichent en grandes cartes, les suivants
  *   dans « Autres travaux ».
  * - image : { src, alt, credit, illustration }
  *     illustration: true  = photo libre de droits (Unsplash), créditée en bas de page
@@ -41,6 +41,7 @@ const PORTFOLIO_DATA = {
     paragraphs: [
       "Élève ingénieur en 2e année de génie électromécanique à l'ENSAM Casablanca, étudiant international au Maroc. Je travaille à la jonction de la mécanique, de l'électronique et du logiciel.",
       "Mon projet principal est BIRD-X, un drone VTOL à aile déformable : mécanismes d'articulation modélisés sous SolidWorks, électronique de vol Pixhawk et ESP32-S3, autonomie calculée à 131 minutes.",
+      "En août 2026, stage chez Lesieur Cristal : automatisation complète d'un palettiseur sur automate Siemens S7-1200, validée sur jumeau numérique.",
       "Objectif : une double diplomation avec ENSAM ParisTech en robotique et systèmes intelligents, puis un poste en bureau d'études en ingénierie électrique et automatisme."
     ],
     photos: [
@@ -123,6 +124,28 @@ const PORTFOLIO_DATA = {
       ],
       tagline: "Aile déformable, VTOL, énergie solaire",
       year: "En cours · 2026"
+    },
+    {
+      id: "stage",
+      title: "Stage Lesieur Cristal — automatisation d'un palettiseur",
+      kind: "Stage d'initiation · Lesieur Cristal",
+      status: "Stage",
+      year: "Août 2026",
+      tagline: "Siemens S7-1200, TIA Portal, WinCC, Factory I/O",
+      summary: "Automatisation complète d'un palettiseur sur automate Siemens S7-1200, validée sur un jumeau numérique avant toute mise en service.",
+      metric: { value: "96 réseaux", label: "LADDER, 4 GRAFCET, 10 défauts surveillés" },
+      problem: "Automatiser entièrement un palettiseur de ligne de production, en intégrant la surveillance des défauts et la sécurité machine.",
+      built: "Programme de commande sur automate S7-1200 sous TIA Portal V17 : séquences décrites en GRAFCET puis programmées en LADDER, mode manuel et pupitre opérateur WinCC. L'ensemble a été validé sur un jumeau numérique Factory I/O.",
+      pipeline: ["GRAFCET", "LADDER (TIA Portal V17)", "Automate S7-1200", "Pupitre WinCC", "Jumeau numérique Factory I/O"],
+      results: [
+        "4 GRAFCET et 96 réseaux LADDER",
+        "10 défauts surveillés",
+        "Mode manuel et pupitre WinCC",
+        "Fonctionnement validé sur jumeau numérique Factory I/O"
+      ],
+      method: "",
+      stack: ["Siemens S7-1200", "TIA Portal V17", "GRAFCET", "LADDER", "WinCC", "Factory I/O", "Sécurité machine"],
+      image: { src: "https://images.unsplash.com/photo-1706098632847-10287a332e0f?auto=format&fit=crop&w=1600&q=80", alt: "Ligne de production industrielle", credit: "Giacomo Folli", illustration: true }
     },
     {
       id: "p08",
@@ -239,43 +262,6 @@ const PORTFOLIO_DATA = {
       year: "En cours · 2026"
     },
     {
-      id: "p01",
-      title: "Boîtier de mesure non intrusif d'une machine",
-      kind: "Projet personnel · mesure électrique",
-      status: "En cours",
-      summary: "Une pince ampèremétrique clipsée sur le câble d'alimentation : l'ESP32 traite le signal de courant et reconnaît l'état de la machine, sans ouvrir l'armoire ni arrêter la production.",
-      metric: { value: "50,0 Hz", label: "fréquence réseau retrouvée" },
-      problem: "Le TRS (taux de rendement synthétique) est l'indicateur central de la performance industrielle. Dans une PME sans système MES, il est relevé à la main, sur papier, heure par heure : en retard, approximatif, souvent incomplet.",
-      built: "Un boîtier qui se clipse sur le câble d'alimentation d'une machine. La signature du courant permet de distinguer quatre états : production, marche à vide, changement de série, panne.",
-      pipeline: [
-        "Pince ampèremétrique",
-        "Conditionnement",
-        "ESP32",
-        "Échantillonnage & traitement du signal",
-        "Valeur efficace",
-        "Classification de l'état",
-        "MQTT",
-        "Base de données",
-        "Tableau de bord"
-      ],
-      results: [
-        "Fréquence réseau retrouvée à 50,0 Hz exactement",
-        "Polarisation à 0,1 %",
-        "Chaîne de mesure validée en 6 étapes, chacune avec son critère de réussite",
-        "23 pages de documentation technique"
-      ],
-      method: "",
-      stack: ["ESP32", "Traitement du signal", "MQTT", "Base de données", "Tableau de bord"],
-      image: {
-        src: "https://images.unsplash.com/photo-1780034766312-73825064806c?auto=format&fit=crop&w=1600&q=80",
-        alt: "Armoire électrique industrielle ouverte",
-        credit: "Raymond Sime",
-        illustration: true
-      },
-      tagline: "Pince ampèremétrique, ESP32, traitement du signal",
-      year: "En cours · 2026"
-    },
-    {
       id: "cad",
       title: "Atelier CAO — SolidWorks & CATIA V5",
       kind: "Travaux de conception mécanique",
@@ -317,6 +303,43 @@ const PORTFOLIO_DATA = {
           caption: "Support symétrique — CATIA V5, Part Design"
         }
       ]
+    },
+    {
+      id: "p01",
+      title: "Boîtier de mesure non intrusif d'une machine",
+      kind: "Projet personnel · mesure électrique",
+      status: "En cours",
+      summary: "Une pince ampèremétrique clipsée sur le câble d'alimentation : l'ESP32 traite le signal de courant et reconnaît l'état de la machine, sans ouvrir l'armoire ni arrêter la production.",
+      metric: { value: "50,0 Hz", label: "fréquence réseau retrouvée" },
+      problem: "Le TRS (taux de rendement synthétique) est l'indicateur central de la performance industrielle. Dans une PME sans système MES, il est relevé à la main, sur papier, heure par heure : en retard, approximatif, souvent incomplet.",
+      built: "Un boîtier qui se clipse sur le câble d'alimentation d'une machine. La signature du courant permet de distinguer quatre états : production, marche à vide, changement de série, panne.",
+      pipeline: [
+        "Pince ampèremétrique",
+        "Conditionnement",
+        "ESP32",
+        "Échantillonnage & traitement du signal",
+        "Valeur efficace",
+        "Classification de l'état",
+        "MQTT",
+        "Base de données",
+        "Tableau de bord"
+      ],
+      results: [
+        "Fréquence réseau retrouvée à 50,0 Hz exactement",
+        "Polarisation à 0,1 %",
+        "Chaîne de mesure validée en 6 étapes, chacune avec son critère de réussite",
+        "23 pages de documentation technique"
+      ],
+      method: "",
+      stack: ["ESP32", "Traitement du signal", "MQTT", "Base de données", "Tableau de bord"],
+      image: {
+        src: "https://images.unsplash.com/photo-1780034766312-73825064806c?auto=format&fit=crop&w=1600&q=80",
+        alt: "Armoire électrique industrielle ouverte",
+        credit: "Raymond Sime",
+        illustration: true
+      },
+      tagline: "Pince ampèremétrique, ESP32, traitement du signal",
+      year: "En cours · 2026"
     },
     {
       id: "p02",
@@ -471,8 +494,10 @@ const PORTFOLIO_DATA = {
         },
         {
           name: "Automatisme",
-          tools: ["LADDER", "GRAFCET", "TIA Portal", "Automation Studio", "Capteurs & détecteurs"],
+          tools: ["Siemens S7-1200", "TIA Portal", "LADDER", "GRAFCET", "WinCC", "Factory I/O", "Automation Studio"],
           achievements: [
+            { text: "Palettiseur automatisé sur S7-1200 : 4 GRAFCET, 96 réseaux LADDER, pupitre WinCC", ref: "stage" },
+            { text: "Validation sur jumeau numérique Factory I/O", ref: "stage" },
             { text: "Programme de commande LADDER d'un banc hydraulique de 5,5 kW", ref: "p06" }
           ]
         }

@@ -80,6 +80,6 @@ Accessibilité : navigation clavier, lien d'évitement, contrastes, respect du r
 
 ## Cache des navigateurs
 
-Dans `index.html`, les fichiers CSS et JS sont appelés avec `?v=4`.
+Dans `index.html`, les fichiers CSS et JS sont appelés avec `?v=5`.
 Après une grosse modification de `css/style.css`, `js/data.js` ou `js/main.js`,
-augmente ce numéro (`?v=5`, etc.) pour que les visiteurs chargent bien la nouvelle version.
+augmente ce numéro (`?v=6`, etc.) pour que les visiteurs chargent bien la nouvelle version.
