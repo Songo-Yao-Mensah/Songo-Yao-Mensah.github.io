@@ -1,3 +1,2 @@
-Dossier pret pour plus tard : si tu obtiens des certifications avec un
-badge/certificat visuel, depose l'image ici et ajoute une entree dans le
-tableau "distinctions" de js/data.js.
+Dossier reserve aux futurs certificats ou attestations (images).
+Pour les afficher, demande a Claude d'ajouter le champ correspondant.

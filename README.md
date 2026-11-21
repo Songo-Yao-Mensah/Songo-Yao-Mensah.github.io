@@ -1,92 +1,79 @@
 # Portfolio — Songo Yao Mensah
 
-Site vitrine statique (HTML/CSS/JS pur, aucun framework, aucune installation
-nécessaire) pour candidatures ingénieur en France, Allemagne et USA.
+Site statique (HTML / CSS / JavaScript, sans framework ni étape de compilation),
+hébergé gratuitement sur GitHub Pages : https://songo-yao-mensah.github.io/
 
 ---
 
-## 🚀 Mise en ligne gratuite sur GitHub Pages
+## Mettre à jour le site en ligne (méthode sans ligne de commande)
 
-Ton compte GitHub : `Songo-Yao-Mensah`
+1. Ouvre le dépôt `Songo-Yao-Mensah.github.io` sur GitHub.
+2. Supprime l'ancien contenu OU écrase les fichiers : bouton **Add file → Upload files**.
+3. Glisse le **contenu** du dossier `Songo-Yao-Mensah-portfolio` (pas le dossier lui-même) :
+   les fichiers `index.html`, `404.html`, `robots.txt`, `sitemap.xml`, `README.md`
+   et les **dossiers** `css`, `js`, `assets` en entier (pour garder la structure).
+4. En bas de page : message du commit, puis **Commit changes**.
+5. Attends 1 à 2 minutes, puis ouvre le site et fais **Ctrl + F5** (vide le cache).
 
-1. Crée un **nouveau repository public** qui s'appelle **exactement** :
-   ```
-   Songo-Yao-Mensah.github.io
-   ```
-   (Le nom doit correspondre pile à `<ton-pseudo>.github.io` — c'est ce nom
-   précis qui active le mode "site personnel" gratuit de GitHub.)
+Structure attendue à la racine du dépôt :
 
-2. Mets tous les fichiers de ce dossier (`index.html`, `css/`, `js/`,
-   `assets/`, ce `README.md`) à la racine de ce repository.
+```
+index.html   404.html   robots.txt   sitemap.xml   README.md
+css/style.css
+js/data.js   js/main.js
+assets/favicon.svg   assets/apple-touch-icon.png   assets/og-image.png
+assets/cv/CV_Songo_Yao_Mensah.pdf
+assets/images/profile/portrait.jpg
+assets/images/projects/   (tes photos de projets, facultatif)
+```
 
-   Depuis ton ordinateur, dans le dossier du projet :
-   ```bash
-   git init
-   git add .
-   git commit -m "Premier déploiement du portfolio"
-   git branch -M main
-   git remote add origin https://github.com/Songo-Yao-Mensah/Songo-Yao-Mensah.github.io.git
-   git push -u origin main
-   ```
-
-3. Sur GitHub → onglet **Settings** du repo → section **Pages** (menu de
-   gauche) → vérifie que la source est bien `main` / dossier `/ (root)`.
-
-4. Après 1 à 2 minutes, ton portfolio est en ligne sur :
-   ```
-   https://songo-yao-mensah.github.io/
-   ```
-   → C'est ce lien que tu mets sur ton CV et LinkedIn.
-
-Aucune carte bancaire, aucun abonnement, hébergement gratuit à vie tant que
-le repo reste public.
+Hébergement : GitHub Pages, gratuit, sans limite de durée tant que le dépôt est public.
 
 ---
 
-## ✏️ Mettre à jour le contenu (nouveau projet, compétence, etc.)
+## Modifier le contenu
 
-**Tu ne touches jamais à `index.html`, `css/` ou `main.js`.**
-Tout le texte du site vit dans un seul fichier :
+**Tout le texte du site est dans un seul fichier : `js/data.js`.**
+Tu ne touches ni à `index.html`, ni à `css/`, ni à `js/main.js`.
 
-```
-js/data.js
-```
+| Pour…                              | Modifie dans `data.js`         |
+|------------------------------------|--------------------------------|
+| Ajouter ou réordonner un projet    | `projects` (les 6 premiers = grandes cartes) |
+| Changer le texte d'ouverture       | `identity.heroLine`, `intro`   |
+| Ajouter une compétence réalisée    | `skills` → `achievements`      |
+| Ajouter une responsabilité / prix  | `engagement` (champ `image` facultatif) |
+| Changer le ciel ou le drone du haut | `hero`                        |
 
-Ouvre-le, repère la section concernée (ex: `projects`, `hardSkills`,
-`distinctions`...), copie un bloc `{ ... }` existant, colle-le, modifie le
-texte. Sauvegarde, puis :
+Règle d'écriture : chaque projet = problème → réalisation → chiffre vérifiable.
 
-```bash
-git add .
-git commit -m "Ajout du projet X"
-git push
-```
+Après une modification sur GitHub (icône crayon sur `js/data.js` → **Commit changes**),
+le site se met à jour en 1 à 2 minutes.
 
-Le site se met à jour automatiquement en 1-2 minutes, sans rien casser.
+## Photos
 
-## 🖼️ Ajouter tes images / ton CV
+- **Tes propres captures** (SolidWorks, CATIA, Node-RED, MySQL…) sont dans `assets/images/projects/`.
+- **Photos d'illustration** : certaines cartes utilisent des photos libres de droits Unsplash
+  (licence Unsplash), chargées depuis le site d'Unsplash. Elles portent la mention
+  « Photo d'illustration » et leurs auteurs sont crédités en bas de page.
+- Pour remplacer une photo d'illustration par TA photo : dépose l'image dans
+  `assets/images/projects/`, puis dans `js/data.js` remplace le champ `image` du projet par :
+  `image: { src: "assets/images/projects/mon-image.jpg", alt: "Description", credit: "", illustration: false }`
+- Pour ajouter des captures dans l'étude de cas d'un projet : ajoute-les dans son champ `gallery`.
+- Pour ajouter une pièce à l'Atelier CAO : ajoute une image dans la `gallery` du projet `cad`.
 
-Chaque dossier `assets/images/...` et `assets/cv/` contient un fichier
-`LISEZ-MOI.txt` qui indique le nom exact de fichier attendu. Dépose ton
-image ou ton CV avec ce nom précis, et il apparaîtra automatiquement à la
-bonne place (sinon un placeholder discret s'affiche en attendant).
+## Remplacer le CV
 
-## 🗂️ Structure du projet
+Dépose le nouveau PDF dans `assets/cv/` avec exactement le nom `CV_Songo_Yao_Mensah.pdf`.
 
-```
-index.html          → structure du site (à ne pas modifier)
-css/style.css        → design (thème dark industriel / blueprint)
-js/data.js            → TOUT le contenu texte — c'est ici que tu travailles
-js/main.js             → logique de rendu + interactions (à ne pas modifier)
-assets/cv/             → ton CV en PDF
-assets/images/projects/→ tes visuels de projets
-assets/images/certifications/ → visuels de futures certifications
-assets/images/profile/ → optionnel, si tu remplaces le schéma hero par une photo
-```
+## Aperçu LinkedIn
 
-## 🔧 Stack technique
+`assets/og-image.png` est l'image affichée quand le lien est partagé sur LinkedIn,
+WhatsApp ou par e-mail. Si l'aperçu LinkedIn reste ancien après une mise à jour,
+utilise l'outil gratuit LinkedIn Post Inspector pour le rafraîchir.
 
-HTML5, CSS3 (variables CSS, Grid, animations natives), JavaScript vanilla
-(aucune dépendance). Polices via Google Fonts (Rajdhani, Inter, JetBrains
-Mono). Aucune étape de build : tu ouvres `index.html` dans un navigateur et
-ça marche déjà en local.
+## Technique
+
+HTML5, CSS3 (variables, Grid, animations), JavaScript sans dépendance.
+Polices Google Fonts : Space Grotesk (titres), DM Sans (texte). Grain léger généré en SVG (aucune image lourde).
+Accessibilité : navigation clavier, lien d'évitement, contrastes, respect du réglage
+« réduire les animations ». Version imprimable propre (Ctrl + P).

@@ -3,283 +3,193 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Songo Yao Mensah — Élève Ingénieur en Génie Électromécanique</title>
-<meta name="description" content="Portfolio de Songo Yao Mensah, élève ingénieur en Génie Électromécanique à l'ENSAM Casablanca — automatisation industrielle, systèmes embarqués, robotique, Industrie 4.0.">
+<title>Songo Yao Mensah — Élève ingénieur en génie électromécanique</title>
+<meta name="description" content="Songo Yao Mensah, élève ingénieur en génie électromécanique à l'ENSAM Casablanca. Robotique, systèmes embarqués, conception mécanique : drone VTOL BIRD-X, Smart Home IoT, chaîne IIoT, banc hydraulique, CAO.">
+<meta name="author" content="Songo Yao Mensah">
+<meta name="theme-color" content="#FAF8F4">
+<link rel="canonical" href="https://songo-yao-mensah.github.io/">
+
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Songo Yao Mensah">
+<meta property="og:title" content="Songo Yao Mensah — Élève ingénieur en génie électromécanique">
+<meta property="og:description" content="Robotique, systèmes embarqués, conception mécanique. Drone VTOL BIRD-X, Smart Home IoT, chaîne IIoT, banc hydraulique.">
+<meta property="og:url" content="https://songo-yao-mensah.github.io/">
+<meta property="og:image" content="https://songo-yao-mensah.github.io/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=Chakra+Petch:wght@400;500;600&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Songo Yao Mensah",
+  "jobTitle": "Élève ingénieur en génie électromécanique",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "ENSAM Casablanca" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Casablanca", "addressCountry": "MA" },
+  "url": "https://songo-yao-mensah.github.io/",
+  "sameAs": ["https://github.com/Songo-Yao-Mensah", "https://www.linkedin.com/in/yao-mensah-songo-1a8761359"]
+}
+</script>
 </head>
 <body>
 
-<!-- ============================================================
-     NAVIGATION
-     ============================================================ -->
-<nav class="navbar">
-  <div class="nav-inner">
-    <a href="#" class="nav-brand">SONGO<span class="dot">.</span>YM</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#distinctions">Distinctions</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#contact" class="nav-cta">Me contacter</a></li>
-    </ul>
-  </div>
-</nav>
+<a class="skip-link" href="#main">Aller au contenu</a>
 
-<!-- ============================================================
-     HERO
-     ============================================================ -->
-<header class="hero">
-  <div class="container hero-inner">
-    <div class="hero-content">
-      <p class="eyebrow" id="heroEyebrow">// Élève Ingénieur — Génie Électromécanique</p>
-      <h1 id="heroName">Songo Yao Mensah</h1>
-      <p class="hero-role" id="heroLead"></p>
-      <div class="hero-tags" id="heroTags"></div>
-      <p class="hero-loc" id="heroLoc"></p>
-      <div class="hero-cta">
-        <a href="#" class="btn btn-primary" id="heroCvBtn">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Télécharger CV
-        </a>
-        <a href="#" class="btn btn-ghost" id="heroGithubBtn" target="_blank" rel="noopener">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.83 1.31 3.52 1 .1-.78.42-1.31.76-1.61-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.83.58A12 12 0 0 0 12 .5z"/></svg>
-          GitHub
-        </a>
-        <a href="#" class="btn btn-ghost" id="heroLinkedinBtn" target="_blank" rel="noopener">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56z"/></svg>
-          LinkedIn
-        </a>
-      </div>
-    </div>
-
-    <div class="hero-visual blueprint-frame" aria-hidden="true">
-      <span class="bp-tr"></span><span class="bp-br"></span>
-      <svg viewBox="0 0 400 400" fill="none">
-        <!-- reference grid ticks -->
-        <g stroke="var(--border-color-strong)" stroke-width="1">
-          <line x1="20" y1="200" x2="380" y2="200" stroke-dasharray="2 6"/>
-          <line x1="200" y1="20" x2="200" y2="380" stroke-dasharray="2 6"/>
-        </g>
-        <!-- VTOL drone schematic -->
-        <g stroke="var(--accent-amber)" stroke-width="2" class="draw-path">
-          <!-- arms -->
-          <line x1="200" y1="200" x2="90" y2="90"/>
-          <line x1="200" y1="200" x2="310" y2="90"/>
-          <line x1="200" y1="200" x2="90" y2="310"/>
-          <line x1="200" y1="200" x2="310" y2="310"/>
-        </g>
-        <g stroke="var(--accent-steel)" stroke-width="2" class="draw-path">
-          <!-- body -->
-          <rect x="176" y="176" width="48" height="48" rx="6"/>
-          <!-- rotor circles -->
-          <circle cx="90" cy="90" r="34"/>
-          <circle cx="310" cy="90" r="34"/>
-          <circle cx="90" cy="310" r="34"/>
-          <circle cx="310" cy="310" r="34"/>
-        </g>
-        <g stroke="var(--text-tertiary)" stroke-width="1" class="draw-path">
-          <circle cx="90" cy="90" r="6"/>
-          <circle cx="310" cy="90" r="6"/>
-          <circle cx="90" cy="310" r="6"/>
-          <circle cx="310" cy="310" r="6"/>
-        </g>
-        <!-- dimension line -->
-        <g stroke="var(--text-tertiary)" stroke-width="1">
-          <line x1="90" y1="350" x2="310" y2="350"/>
-          <line x1="90" y1="344" x2="90" y2="356"/>
-          <line x1="310" y1="344" x2="310" y2="356"/>
-        </g>
-        <text x="200" y="368" fill="var(--text-tertiary)" font-family="Chakra Petch, sans-serif" font-size="10" text-anchor="middle">ENVERGURE — VTOL BIOMIMÉTIQUE</text>
-      </svg>
-      <p class="hero-visual-caption">FIG. 01 — CONCEPTION CAO / SOLIDWORKS</p>
-    </div>
-  </div>
+<!-- ============================ NAVIGATION ============================ -->
+<header class="topbar" id="topbar">
+  <a href="#top" class="topbar-name" id="topName">Songo Yao Mensah</a>
+  <nav class="pill" aria-label="Navigation principale">
+    <a href="#projets" data-nav>Projets</a>
+    <a href="#expertise" data-nav>Expertise</a>
+    <a href="#apropos" data-nav>À propos</a>
+    <a href="#contact" class="pill-cta">Contact</a>
+  </nav>
 </header>
 
-<!-- ============================================================
-     À PROPOS + PARCOURS ACADÉMIQUE
-     ============================================================ -->
-<section id="about">
-  <svg class="about-deco" viewBox="0 0 400 400" fill="none" aria-hidden="true">
-    <g stroke="var(--accent-steel)" stroke-width="1.5">
-      <circle cx="330" cy="70" r="40"/>
-      <circle cx="330" cy="70" r="14"/>
-      <line x1="330" y1="20" x2="330" y2="34"/>
-      <line x1="330" y1="106" x2="330" y2="120"/>
-      <line x1="280" y1="70" x2="294" y2="70"/>
-      <line x1="366" y1="70" x2="380" y2="70"/>
-      <line x1="294" y1="34" x2="304" y2="44"/>
-      <line x1="356" y1="96" x2="366" y2="106"/>
-      <line x1="366" y1="34" x2="356" y2="44"/>
-      <line x1="304" y1="96" x2="294" y2="106"/>
-    </g>
-  </svg>
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">À propos</p>
-      <h2>Ingénierie pluridisciplinaire</h2>
+<main id="main">
+
+<!-- ============================ HERO PLEIN ÉCRAN ============================ -->
+<section class="hero" id="top" aria-label="Présentation">
+  <div class="hero-sky" id="heroSky" aria-hidden="true"></div>
+  <img class="hero-drone" id="heroDrone" alt="" aria-hidden="true">
+  <div class="hero-grain" aria-hidden="true"></div>
+  <div class="hero-content">
+    <h1 class="hero-name" id="heroName"><span class="line"><span>Songo</span></span><span class="line"><span>Yao Mensah</span></span></h1>
+    <p class="hero-line" id="heroLine"></p>
+    <div class="hero-actions">
+      <a class="btn btn-dark" href="#projets">Voir les projets</a>
+      <a class="btn btn-glass" id="heroCv" href="#" download>Télécharger le CV</a>
     </div>
-    <div class="about-grid">
-      <div class="about-text reveal" id="aboutParagraphs"></div>
-      <div class="reveal">
-        <div class="timeline" id="academicTimeline"></div>
-        <div class="cursus-card" id="cursusCard">
-          <button class="cursus-toggle" id="cursusToggleBtn">
-            <div>
-              <div class="cursus-toggle-title" id="cursusTitle"></div>
-              <div class="cursus-toggle-sub" id="cursusSubtitle"></div>
-            </div>
-            <svg class="cursus-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+  <p class="hero-caption" id="heroCaption"></p>
+  <a class="hero-scroll" href="#mission" aria-label="Défiler vers le contenu"><span></span></a>
+</section>
+
+<!-- ============================ MISSION ============================ -->
+<section class="mission" id="mission">
+  <div class="wrap mission-grid">
+    <div class="mission-text">
+      <p class="kicker reveal">À propos</p>
+      <h2 class="reveal" id="introTitle"></h2>
+      <div class="mission-paras reveal" id="introParas"></div>
+      <div class="mission-actions reveal">
+        <a class="btn btn-dark" href="#contact">Me contacter</a>
+        <a class="btn btn-line" id="introLinkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="mission-photos" id="introPhotos"></div>
+  </div>
+</section>
+
+<!-- ============================ PROJETS ============================ -->
+<section class="section" id="projets">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Projets</h2>
+      <p>Cliquez sur un projet pour lire l'étude complète : problème, réalisation, résultats.</p>
+    </div>
+    <div class="grid-projects" id="projectGrid"></div>
+
+    <div class="others reveal">
+      <h3 class="small-title">Autres travaux</h3>
+      <ul class="others-list" id="othersList"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ EXPERTISE ============================ -->
+<section class="section section-soft" id="expertise">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Ce que je fais</h2>
+      <p>Six domaines. Chacun se déplie : outils, réalisations et projet qui les prouve.</p>
+    </div>
+    <div class="do-grid" id="skillGrid"></div>
+  </div>
+</section>
+
+<!-- ============================ À PROPOS / PARCOURS ============================ -->
+<section class="section" id="apropos">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Parcours</h2>
+    </div>
+    <div class="path-grid">
+      <ol class="timeline reveal" id="timeline"></ol>
+      <div class="path-side reveal">
+        <h3 class="small-title">Langues</h3>
+        <dl class="langs" id="langs"></dl>
+        <h3 class="small-title">Centres d'intérêt</h3>
+        <p class="interests" id="interests"></p>
+        <div class="fold" id="cursusFold">
+          <button class="fold-btn" id="cursusBtn" aria-expanded="false" aria-controls="cursusBody">
+            <span id="cursusTitle"></span><span class="plus" aria-hidden="true"></span>
           </button>
-          <div class="cursus-body">
-            <div class="cursus-content" id="cursusContent"></div>
-          </div>
+          <div class="fold-body" id="cursusBody"><div><div id="cursusContent"></div></div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     COMPÉTENCES
-     ============================================================ -->
-<section id="skills">
-  <div class="container">
+<!-- ============================ ENGAGEMENT ============================ -->
+<section class="section section-soft" id="engagement">
+  <div class="wrap">
     <div class="section-head reveal">
-      <p class="eyebrow">Compétences</p>
-      <h2>Hard skills & soft skills</h2>
-      <p>Clique sur une catégorie pour voir le détail.</p>
+      <h2>Engagement &amp; distinctions</h2>
     </div>
-
-    <div class="skills-block reveal">
-      <span class="skills-block-label">Hard skills</span>
-      <div class="bento-grid" id="hardSkillsGrid"></div>
-    </div>
-
-    <div class="skills-block reveal">
-      <span class="skills-block-label">Soft skills</span>
-      <div class="softskills-grid" id="softSkillsGrid"></div>
-    </div>
+    <div class="eng-grid" id="engGrid"></div>
   </div>
 </section>
 
-<!-- ============================================================
-     PROJETS
-     ============================================================ -->
-<section id="projects">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Projets</p>
-      <h2>Projets académiques & techniques</h2>
+<!-- ============================ CONTACT ============================ -->
+<section class="contact" id="contact">
+  <div class="contact-sky" id="contactSky" aria-hidden="true"></div>
+  <div class="wrap contact-inner reveal">
+    <p class="kicker">Contact</p>
+    <h2>Stage, projet ou échange technique&nbsp;?</h2>
+    <a class="contact-mail" id="contactMail" href="#"></a>
+    <div class="contact-actions">
+      <button class="btn btn-line" id="copyMail" type="button">Copier l'adresse</button>
+      <a class="btn btn-dark" id="contactCv" href="#" download>Télécharger le CV</a>
     </div>
-    <div id="projectFeatured"></div>
-    <div class="projects-secondary" id="projectsSecondary"></div>
+    <p class="copy-msg" id="copyMsg" role="status" aria-live="polite"></p>
   </div>
 </section>
 
-<!-- ============================================================
-     DISTINCTIONS & VIE ASSOCIATIVE
-     ============================================================ -->
-<section id="distinctions">
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Parcours</p>
-      <h2>Distinctions & vie associative</h2>
-    </div>
-    <div class="distinctions-list" id="distinctionsList"></div>
-  </div>
-</section>
-
-<!-- ============================================================
-     LANGUES & CENTRES D'INTÉRÊT
-     ============================================================ -->
-<section id="languages">
-  <div class="container">
-    <div class="lang-interest-grid">
-      <div class="reveal">
-        <div class="section-head" style="margin-bottom:32px;">
-          <p class="eyebrow">Langues</p>
-          <h2 style="font-size:26px;">Communication multilingue</h2>
-        </div>
-        <div id="languagesList"></div>
-      </div>
-      <div class="reveal">
-        <div class="section-head" style="margin-bottom:32px;">
-          <p class="eyebrow">Centres d'intérêt</p>
-          <h2 style="font-size:26px;">En dehors du labo</h2>
-        </div>
-        <div class="interest-pills" id="interestsList"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     CONTACT
-     ============================================================ -->
-<section id="contact" class="contact-section">
-  <svg class="contact-deco" viewBox="0 0 400 400" fill="none" aria-hidden="true">
-    <g stroke="var(--accent-amber)" stroke-width="2">
-      <rect x="170" y="330" width="60" height="26" rx="4"/>
-      <line x1="200" y1="330" x2="200" y2="270"/>
-      <circle cx="200" cy="260" r="12"/>
-      <line x1="200" y1="248" x2="270" y2="190"/>
-      <circle cx="278" cy="182" r="11"/>
-      <line x1="286" y1="174" x2="330" y2="120"/>
-      <circle cx="336" cy="112" r="9"/>
-    </g>
-    <g stroke="var(--accent-steel)" stroke-width="2">
-      <line x1="336" y1="112" x2="352" y2="88"/>
-      <line x1="336" y1="112" x2="318" y2="90"/>
-      <line x1="352" y1="88" x2="358" y2="70"/>
-      <line x1="318" y1="90" x2="310" y2="72"/>
-    </g>
-    <g stroke="var(--border-color-strong)" stroke-width="1">
-      <circle cx="200" cy="260" r="26" stroke-dasharray="2 6"/>
-      <circle cx="278" cy="182" r="22" stroke-dasharray="2 6"/>
-    </g>
-  </svg>
-  <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Contact</p>
-      <h2>Discutons de votre projet</h2>
-      <p>Ouvert aux stages d'initiation et échanges autour de l'automatisation, des systèmes embarqués et de l'Industrie 4.0.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-links" id="contactLinks"></div>
-      <form class="contact-form reveal" id="contactForm">
-        <div class="form-group">
-          <label for="cf-name">Nom</label>
-          <input type="text" id="cf-name" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="cf-email">Email</label>
-          <input type="email" id="cf-email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="cf-message">Message</label>
-          <textarea id="cf-message" name="message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" style="justify-content:center;">Envoyer le message</button>
-      </form>
-    </div>
-  </div>
-</section>
+</main>
 
 <footer class="footer">
-  <div class="container">
-    <span id="footerText"></span>
-  </div>
+  <nav class="footer-links" aria-label="Liens de bas de page">
+    <a href="#apropos">À propos</a><span>|</span>
+    <a href="#projets">Projets</a><span>|</span>
+    <a href="#" id="footCv" download>CV</a><span>|</span>
+    <a href="#" id="footLinkedin" target="_blank" rel="noopener">LinkedIn</a><span>|</span>
+    <a href="#" id="footGithub" target="_blank" rel="noopener">GitHub</a><span>|</span>
+    <a href="#contact">Contact</a>
+  </nav>
+  <p id="footText"></p>
+  <p class="footer-credits" id="footCredits"></p>
 </footer>
+
+<dialog class="case" id="caseDialog" aria-labelledby="caseTitle">
+  <div id="caseContent"></div>
+</dialog>
+
+<noscript>
+  <div class="noscript">Ce portfolio affiche son contenu avec JavaScript. Version texte : <a href="assets/cv/CV_Songo_Yao_Mensah.pdf">CV en PDF</a> · songoyaomensah@gmail.com</div>
+</noscript>
 
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>

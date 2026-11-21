@@ -1,11 +1,14 @@
-Depose ici tes photos/rendus de projets, avec EXACTEMENT ces noms de fichiers
-(le site les affichera automatiquement -- sinon un placeholder stylise s'affiche a la place) :
+Images des projets (toutes referencees dans js/data.js).
 
-- drone-vtol.jpg        -> rendu SolidWorks ou photo du drone VTOL
-- smart-energy.jpg      -> photo du montage ESP32 / dashboard Firebase
-- fsm-cafe.jpg          -> schema/simulation VHDL du distributeur de cafe
-- pic16f887a.jpg        -> photo du montage PIC16F887A / Proteus
+BIRD-X        : birdx-rendu.jpg (rendu), birdx-articulations.jpg, birdx-plan.jpg,
+                birdx-epaule.jpg, birdx-poignet.jpg (extraits des posters A1),
+                birdx-panneau-fixe.jpg, birdx-ferrure-externe.jpg,
+                birdx-ferrure-interne.jpg, birdx-aile-filaire.jpg (SolidWorks)
+Smart Home    : smarthome-montage.jpg, smarthome-banc.jpg
+Chaine IIoT   : iiot-node-red.jpg, iiot-mqtt.jpg, iiot-fonction-sql.jpg,
+                iiot-mysql.jpg, iiot-grafana-mysql.jpg
+CAO           : catia-support-symetrique.jpg (+ pieces BIRD-X)
+Engagement    : startech-africa.jpg, eloquence-trophee.jpg
 
-Formats acceptes : .jpg, .jpeg, .png, .webp
-Si tu changes l'extension ou le nom, mets aussi a jour le champ "image" du
-projet correspondant dans js/data.js.
+Pour ajouter une image : depose-la ici puis reference-la dans js/data.js
+(champ image, gallery, ou image d'un engagement). Voir README.md.
